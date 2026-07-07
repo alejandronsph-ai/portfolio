@@ -179,7 +179,24 @@
     o.addEventListener('click', (e) => { if (e.target === o || e.target.closest('.overlay-close')) closeOverlays(); });
   });
 
+  const prefetched = new Set();
+  const prefetchCert = (id) => {
+    if (prefetched.has(id)) return;
+    const modal = document.getElementById(id);
+    const img = modal?.querySelector('img[src]');
+    if (!img) return;
+    prefetched.add(id);
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = img.src;
+    document.head.appendChild(link);
+  };
+
   document.querySelectorAll('[data-cert]').forEach((btn) => {
+    btn.addEventListener('mouseenter', () => prefetchCert(btn.dataset.cert));
+    btn.addEventListener('focus', () => prefetchCert(btn.dataset.cert));
+    btn.addEventListener('touchstart', () => prefetchCert(btn.dataset.cert), { passive: true });
     btn.addEventListener('click', () => {
       const modal = document.getElementById(btn.dataset.cert);
       if (!modal) return;
