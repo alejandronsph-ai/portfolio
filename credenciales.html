@@ -14,6 +14,7 @@
 .cred-page-head { padding: clamp(6rem,14vw,9rem) var(--gutter) 2rem; }
 .cred-back { display: inline-flex; align-items: center; gap: .4rem; margin-bottom: 1.2rem; }
 .cred-back:hover { color: var(--red); }
+@media (max-width: 700px) { .sec-title { font-size: clamp(1.2rem, 6.5vw, 4rem); } }
 </style>
 </head>
 <body>
@@ -52,20 +53,20 @@
       <button type="button" class="cred-row" data-cert="cert-02"><span class="mono-b red">02</span><span class="mono-b">This Is Animation</span><span class="issuer mono faint">Sony Pictures</span><span class="arrow">↘</span></button>
       <button type="button" class="cred-row" data-cert="cert-03"><span class="mono-b red">03</span><span class="mono-b"><span data-lang-inline="es">Operador de Cámara de Cine y Televisión</span><span data-lang-inline="en">Film and Television Camera Operator</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
       <button type="button" class="cred-row" data-cert="cert-04"><span class="mono-b red">04</span><span class="mono-b"><span data-lang-inline="es">Iluminación de Cine y Televisión</span><span data-lang-inline="en">Film and Television Lighting</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-05"><span class="mono-b red">05</span><span class="mono-b">Claude Code 101</span><span class="issuer mono faint">Anthropic</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-06"><span class="mono-b red">06</span><span class="mono-b">The Fairlight Audio Guide to DaVinci Resolve 20</span><span class="issuer mono faint">Blackmagic Design</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-07"><span class="mono-b red">07</span><span class="mono-b"><span data-lang-inline="es">Producción Musical y su Efecto en la Composición</span><span data-lang-inline="en">Music Production and Its Effect on Composition</span></span><span class="issuer mono faint">Berklee X</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-08"><span class="mono-b red">08</span><span class="mono-b"><span data-lang-inline="es">Crear Música con Tecnología</span><span data-lang-inline="en">Creating Music with Technology</span></span><span class="issuer mono faint">Berklee X</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-09"><span class="mono-b red">09</span><span class="mono-b"><span data-lang-inline="es">Fotografía Avanzada</span><span data-lang-inline="en">Advanced Photography</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-10"><span class="mono-b red">10</span><span class="mono-b"><span data-lang-inline="es">Edición Fotográfica</span><span data-lang-inline="en">Photo Editing</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-11"><span class="mono-b red">11</span><span class="mono-b"><span data-lang-inline="es">Fotografía de Aplicaciones</span><span data-lang-inline="en">Applied Photography</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-12"><span class="mono-b red">12</span><span class="mono-b"><span data-lang-inline="es">Manejo de Cámaras para Video y Fotografía</span><span data-lang-inline="en">Camera Handling for Video and Photography</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-13"><span class="mono-b red">13</span><span class="mono-b"><span data-lang-inline="es">Auxiliar de Fotografía</span><span data-lang-inline="en">Photography Assistant</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-14"><span class="mono-b red">14</span><span class="mono-b"><span data-lang-inline="es">Inglés Avanzado</span><span data-lang-inline="en">Advanced English</span></span><span class="issuer mono faint">ICDA</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-15"><span class="mono-b red">15</span><span class="mono-b"><span data-lang-inline="es">Inglés Técnico Aplicado a Imagen Fotográfica</span><span data-lang-inline="en">Technical English Applied to Photographic Imaging</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-16"><span class="mono-b red">16</span><span class="mono-b"><span data-lang-inline="es">Fundamentos de Informática</span><span data-lang-inline="en">Computer Fundamentals</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-17"><span class="mono-b red">17</span><span class="mono-b">EmprendeLab 2025</span><span class="issuer mono faint">Promipyme</span><span class="arrow">↘</span></button>
-      <button type="button" class="cred-row" data-cert="cert-18"><span class="mono-b red">18</span><span class="mono-b">Claude 101</span><span class="issuer mono faint">Anthropic</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-18"><span class="mono-b red">05</span><span class="mono-b">Claude 101</span><span class="issuer mono faint">Anthropic</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-05"><span class="mono-b red">06</span><span class="mono-b">Claude Code 101</span><span class="issuer mono faint">Anthropic</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-17"><span class="mono-b red">07</span><span class="mono-b">EmprendeLab 2025</span><span class="issuer mono faint">Promipyme</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-06"><span class="mono-b red">08</span><span class="mono-b">The Fairlight Audio Guide to DaVinci Resolve 20</span><span class="issuer mono faint">Blackmagic Design</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-07"><span class="mono-b red">09</span><span class="mono-b"><span data-lang-inline="es">Producción Musical y su Efecto en la Composición</span><span data-lang-inline="en">Music Production and Its Effect on Composition</span></span><span class="issuer mono faint">Berklee X</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-08"><span class="mono-b red">10</span><span class="mono-b"><span data-lang-inline="es">Crear Música con Tecnología</span><span data-lang-inline="en">Creating Music with Technology</span></span><span class="issuer mono faint">Berklee X</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-09"><span class="mono-b red">11</span><span class="mono-b"><span data-lang-inline="es">Fotografía Avanzada</span><span data-lang-inline="en">Advanced Photography</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-10"><span class="mono-b red">12</span><span class="mono-b"><span data-lang-inline="es">Edición Fotográfica</span><span data-lang-inline="en">Photo Editing</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-11"><span class="mono-b red">13</span><span class="mono-b"><span data-lang-inline="es">Fotografía de Aplicaciones</span><span data-lang-inline="en">Applied Photography</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-12"><span class="mono-b red">14</span><span class="mono-b"><span data-lang-inline="es">Manejo de Cámaras para Video y Fotografía</span><span data-lang-inline="en">Camera Handling for Video and Photography</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-13"><span class="mono-b red">15</span><span class="mono-b"><span data-lang-inline="es">Auxiliar de Fotografía</span><span data-lang-inline="en">Photography Assistant</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-14"><span class="mono-b red">16</span><span class="mono-b"><span data-lang-inline="es">Inglés Avanzado</span><span data-lang-inline="en">Advanced English</span></span><span class="issuer mono faint">ICDA</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-15"><span class="mono-b red">17</span><span class="mono-b"><span data-lang-inline="es">Inglés Técnico Aplicado a Imagen Fotográfica</span><span data-lang-inline="en">Technical English Applied to Photographic Imaging</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
+      <button type="button" class="cred-row" data-cert="cert-16"><span class="mono-b red">18</span><span class="mono-b"><span data-lang-inline="es">Fundamentos de Informática</span><span data-lang-inline="en">Computer Fundamentals</span></span><span class="issuer mono faint">INFOTEP</span><span class="arrow">↘</span></button>
     </div>
   </div>
 </section>
@@ -97,75 +98,75 @@
   <div class="overlay-img"><img alt="04 / Iluminación de Cine y Televisión · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-04.webp"/></div>
   <p class="overlay-caption mono">04 / Iluminación de Cine y Televisión · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-05" data-title="05 / Claude Code 101 · Anthropic">
+<div class="overlay cert-overlay" id="cert-05" data-title="06 / Claude Code 101 · Anthropic">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="05 / Claude Code 101 · Anthropic" loading="lazy" decoding="async" src="assets/certs/cert-05.webp"/></div>
-  <p class="overlay-caption mono">05 / Claude Code 101 · Anthropic</p>
+  <div class="overlay-img"><img alt="06 / Claude Code 101 · Anthropic" loading="lazy" decoding="async" src="assets/certs/cert-05.webp"/></div>
+  <p class="overlay-caption mono">06 / Claude Code 101 · Anthropic</p>
 </div>
-<div class="overlay cert-overlay" id="cert-06" data-title="06 / The Fairlight Audio Guide to DaVinci Resolve 20 · Blackmagic Design">
+<div class="overlay cert-overlay" id="cert-06" data-title="08 / The Fairlight Audio Guide to DaVinci Resolve 20 · Blackmagic Design">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="06 / The Fairlight Audio Guide to DaVinci Resolve 20 · Blackmagic Design" loading="lazy" decoding="async" src="assets/certs/cert-06.webp"/></div>
-  <p class="overlay-caption mono">06 / The Fairlight Audio Guide to DaVinci Resolve 20 · Blackmagic Design</p>
+  <div class="overlay-img"><img alt="08 / The Fairlight Audio Guide to DaVinci Resolve 20 · Blackmagic Design" loading="lazy" decoding="async" src="assets/certs/cert-06.webp"/></div>
+  <p class="overlay-caption mono">08 / The Fairlight Audio Guide to DaVinci Resolve 20 · Blackmagic Design</p>
 </div>
-<div class="overlay cert-overlay" id="cert-07" data-title="07 / Producción Musical y su Efecto en la Composición · Berklee X">
+<div class="overlay cert-overlay" id="cert-07" data-title="09 / Producción Musical y su Efecto en la Composición · Berklee X">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="07 / Producción Musical y su Efecto en la Composición · Berklee X" loading="lazy" decoding="async" src="assets/certs/cert-07.webp"/></div>
-  <p class="overlay-caption mono">07 / Producción Musical y su Efecto en la Composición · Berklee X</p>
+  <div class="overlay-img"><img alt="09 / Producción Musical y su Efecto en la Composición · Berklee X" loading="lazy" decoding="async" src="assets/certs/cert-07.webp"/></div>
+  <p class="overlay-caption mono">09 / Producción Musical y su Efecto en la Composición · Berklee X</p>
 </div>
-<div class="overlay cert-overlay" id="cert-08" data-title="08 / Crear Música con Tecnología · Berklee X">
+<div class="overlay cert-overlay" id="cert-08" data-title="10 / Crear Música con Tecnología · Berklee X">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="08 / Crear Música con Tecnología · Berklee X" loading="lazy" decoding="async" src="assets/certs/cert-08.webp"/></div>
-  <p class="overlay-caption mono">08 / Crear Música con Tecnología · Berklee X</p>
+  <div class="overlay-img"><img alt="10 / Crear Música con Tecnología · Berklee X" loading="lazy" decoding="async" src="assets/certs/cert-08.webp"/></div>
+  <p class="overlay-caption mono">10 / Crear Música con Tecnología · Berklee X</p>
 </div>
-<div class="overlay cert-overlay" id="cert-09" data-title="09 / Fotografía Avanzada · INFOTEP">
+<div class="overlay cert-overlay" id="cert-09" data-title="11 / Fotografía Avanzada · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="09 / Fotografía Avanzada · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-09.webp"/></div>
-  <p class="overlay-caption mono">09 / Fotografía Avanzada · INFOTEP</p>
+  <div class="overlay-img"><img alt="11 / Fotografía Avanzada · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-09.webp"/></div>
+  <p class="overlay-caption mono">11 / Fotografía Avanzada · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-10" data-title="10 / Edición Fotográfica · INFOTEP">
+<div class="overlay cert-overlay" id="cert-10" data-title="12 / Edición Fotográfica · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="10 / Edición Fotográfica · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-10.webp"/></div>
-  <p class="overlay-caption mono">10 / Edición Fotográfica · INFOTEP</p>
+  <div class="overlay-img"><img alt="12 / Edición Fotográfica · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-10.webp"/></div>
+  <p class="overlay-caption mono">12 / Edición Fotográfica · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-11" data-title="11 / Fotografía de Aplicaciones · INFOTEP">
+<div class="overlay cert-overlay" id="cert-11" data-title="13 / Fotografía de Aplicaciones · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="11 / Fotografía de Aplicaciones · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-11.webp"/></div>
-  <p class="overlay-caption mono">11 / Fotografía de Aplicaciones · INFOTEP</p>
+  <div class="overlay-img"><img alt="13 / Fotografía de Aplicaciones · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-11.webp"/></div>
+  <p class="overlay-caption mono">13 / Fotografía de Aplicaciones · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-12" data-title="12 / Manejo de Cámaras para Video y Fotografía · INFOTEP">
+<div class="overlay cert-overlay" id="cert-12" data-title="14 / Manejo de Cámaras para Video y Fotografía · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="12 / Manejo de Cámaras para Video y Fotografía · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-12.webp"/></div>
-  <p class="overlay-caption mono">12 / Manejo de Cámaras para Video y Fotografía · INFOTEP</p>
+  <div class="overlay-img"><img alt="14 / Manejo de Cámaras para Video y Fotografía · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-12.webp"/></div>
+  <p class="overlay-caption mono">14 / Manejo de Cámaras para Video y Fotografía · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-13" data-title="13 / Auxiliar de Fotografía · INFOTEP">
+<div class="overlay cert-overlay" id="cert-13" data-title="15 / Auxiliar de Fotografía · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="13 / Auxiliar de Fotografía · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-13.webp"/></div>
-  <p class="overlay-caption mono">13 / Auxiliar de Fotografía · INFOTEP</p>
+  <div class="overlay-img"><img alt="15 / Auxiliar de Fotografía · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-13.webp"/></div>
+  <p class="overlay-caption mono">15 / Auxiliar de Fotografía · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-14" data-title="14 / Inglés Avanzado · ICDA">
+<div class="overlay cert-overlay" id="cert-14" data-title="16 / Inglés Avanzado · ICDA">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="14 / Inglés Avanzado · ICDA" loading="lazy" decoding="async" src="assets/certs/cert-14.webp"/></div>
-  <p class="overlay-caption mono">14 / Inglés Avanzado · ICDA</p>
+  <div class="overlay-img"><img alt="16 / Inglés Avanzado · ICDA" loading="lazy" decoding="async" src="assets/certs/cert-14.webp"/></div>
+  <p class="overlay-caption mono">16 / Inglés Avanzado · ICDA</p>
 </div>
-<div class="overlay cert-overlay" id="cert-15" data-title="15 / Inglés Técnico Aplicado a Imagen Fotográfica · INFOTEP">
+<div class="overlay cert-overlay" id="cert-15" data-title="17 / Inglés Técnico Aplicado a Imagen Fotográfica · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="15 / Inglés Técnico Aplicado a Imagen Fotográfica · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-15.webp"/></div>
-  <p class="overlay-caption mono">15 / Inglés Técnico Aplicado a Imagen Fotográfica · INFOTEP</p>
+  <div class="overlay-img"><img alt="17 / Inglés Técnico Aplicado a Imagen Fotográfica · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-15.webp"/></div>
+  <p class="overlay-caption mono">17 / Inglés Técnico Aplicado a Imagen Fotográfica · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-16" data-title="16 / Fundamentos de Informática · INFOTEP">
+<div class="overlay cert-overlay" id="cert-16" data-title="18 / Fundamentos de Informática · INFOTEP">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="16 / Fundamentos de Informática · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-16.webp"/></div>
-  <p class="overlay-caption mono">16 / Fundamentos de Informática · INFOTEP</p>
+  <div class="overlay-img"><img alt="18 / Fundamentos de Informática · INFOTEP" loading="lazy" decoding="async" src="assets/certs/cert-16.webp"/></div>
+  <p class="overlay-caption mono">18 / Fundamentos de Informática · INFOTEP</p>
 </div>
-<div class="overlay cert-overlay" id="cert-17" data-title="17 / EmprendeLab 2025 · Promipyme">
+<div class="overlay cert-overlay" id="cert-17" data-title="07 / EmprendeLab 2025 · Promipyme">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="17 / EmprendeLab 2025 · Promipyme" loading="lazy" decoding="async" src="assets/certs/cert-17.webp"/></div>
-  <p class="overlay-caption mono">17 / EmprendeLab 2025 · Promipyme</p>
+  <div class="overlay-img"><img alt="07 / EmprendeLab 2025 · Promipyme" loading="lazy" decoding="async" src="assets/certs/cert-17.webp"/></div>
+  <p class="overlay-caption mono">07 / EmprendeLab 2025 · Promipyme</p>
 </div>
-<div class="overlay cert-overlay" id="cert-18" data-title="18 / Claude 101 · Anthropic">
+<div class="overlay cert-overlay" id="cert-18" data-title="05 / Claude 101 · Anthropic">
   <div class="overlay-bar"><span class="mono red"><span data-lang-inline="es">Certificado</span><span data-lang-inline="en">Certificate</span></span><button class="overlay-close" type="button"><span data-lang-inline="es">Cerrar</span><span data-lang-inline="en">Close</span> ×</button></div>
-  <div class="overlay-img"><img alt="18 / Claude 101 · Anthropic" loading="lazy" decoding="async" src="assets/certs/cert-18.webp"/></div>
-  <p class="overlay-caption mono">18 / Claude 101 · Anthropic</p>
+  <div class="overlay-img"><img alt="05 / Claude 101 · Anthropic" loading="lazy" decoding="async" src="assets/certs/cert-18.webp"/></div>
+  <p class="overlay-caption mono">05 / Claude 101 · Anthropic</p>
 </div>
 
 <script>
