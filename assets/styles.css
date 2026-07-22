@@ -422,6 +422,25 @@ footer a:hover { color: var(--red); }
   text-transform: uppercase;
 }
 .overlay-close:hover { background: var(--red); border-color: var(--red); color: #fff; }
+.overlay-actions { display: flex; gap: .5rem; align-items: center; }
+.overlay-btn {
+  padding: .6rem 1.1rem;
+  border: 1px solid #EDEDE8;
+  background: transparent;
+  color: #EDEDE8;
+  cursor: pointer;
+  font-size: .62rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.overlay-btn:hover { background: var(--red); border-color: var(--red); color: #fff; }
+@media (max-width: 640px) {
+  .overlay-actions { gap: .3rem; }
+  .overlay-btn, .overlay-close { padding: .5rem .6rem; font-size: .52rem; letter-spacing: .05em; }
+}
 .overlay-img { min-height: 0; display: grid; place-items: center; overflow: hidden; }
 .overlay-img img { max-width: 100%; max-height: calc(100svh - 9rem); object-fit: contain; background: #fff; }
 .overlay-caption { border-top: 1px solid rgba(244,244,240,.3); padding-top: .55rem; }
