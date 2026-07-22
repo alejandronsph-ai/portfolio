@@ -169,34 +169,17 @@
   <p class="overlay-caption mono">05 / Claude 101 · Anthropic</p>
 </div>
 
+<script src="assets/cert-actions.js?v=1"></script>
 <script>
 (function () {
   const root = document.documentElement;
 
-  const certFilename = (title) => 'Alejandro-Nieves-Santana-' + (title || 'Certificado').replace(/[·\/]+/g, ' ').trim().replace(/\s+/g, '-').replace(/[^A-Za-z0-9\-]/g, '') + '.webp';
-  const saveCert = (img, title) => {
-    const a = document.createElement('a');
-    a.href = img.currentSrc || img.src;
-    a.download = certFilename(title);
-    document.body.appendChild(a); a.click(); a.remove();
-  };
-  const printCert = (img, title) => {
-    const src = img.currentSrc || img.src;
-    const landscape = (img.naturalWidth || 1) >= (img.naturalHeight || 1);
-    const w = window.open('', '_blank');
-    if (!w) return;
-    w.document.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>' + title + '</title><style>@page{size:' + (landscape ? 'landscape' : 'portrait') + ';margin:0}html,body{margin:0;padding:0;width:100%;height:100%}body{display:flex;align-items:center;justify-content:center;background:#fff}img{max-width:100%;max-height:100%;object-fit:contain;display:block}</style></head><body><img src="' + src + '" onload="setTimeout(function(){window.focus();window.print();},120)"></body></html>');
-    w.document.close();
-  };
+  /* Print / Save (PDF) handlers live in assets/cert-actions.js */
   document.querySelectorAll('.cert-overlay').forEach((el) => {
     el.setAttribute('role', 'dialog');
     el.setAttribute('aria-modal', 'true');
     el.setAttribute('aria-hidden', 'true');
     el.setAttribute('aria-label', el.dataset.title);
-    const img = el.querySelector('img');
-    const title = el.dataset.title || 'Certificado';
-    el.querySelector('[data-save]')?.addEventListener('click', () => saveCert(img, title));
-    el.querySelector('[data-print]')?.addEventListener('click', () => printCert(img, title));
   });
 
   const syncLock = () => {
